@@ -6,6 +6,8 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 @Injectable()
 export class FoodService {
   foods: FirebaseListObservable<any[]>;
+  delete: any;  [x: string]: any;
+
 
   constructor(private database: AngularFireDatabase) {
     this.foods = database.list('foods');

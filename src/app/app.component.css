@@ -1,0 +1,9 @@
+.style {
+  background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("https://i2-prod.cambridge-news.co.uk/incoming/article13836404.ece/ALTERNATES/s615/GettyImages-537622652.jpg");
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.jumbotron{
+  background-color: #ffd8ca
+}

@@ -18,4 +18,14 @@ export class EditFoodComponent implements OnInit {
   ngOnInit() {
   }
 
+  beginUpdatingFood(foodToUpdate){
+    this.foodService.updateFood(foodToUpdate);
+  }
+
+  beginDeletingFood(foodToDelete){
+    if(confirm("Are you sure you want to delete this item from the inventory?")){
+      this.foodService.deleteFood(foodToDelete);
+    }
+  }
+
 }
