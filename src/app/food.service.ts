@@ -7,4 +7,8 @@ export class FoodService {
 
   constructor() { }
 
+  getFoods() {
+    return FOODS;
+  }
+
 }
