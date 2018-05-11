@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
+import { Location } from '@angular/common';
+import { Food } from '../food.model';
 
 @Component({
   selector: 'app-food-detail',
@@ -6,8 +9,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./food-detail.component.css']
 })
 export class FoodDetailComponent implements OnInit {
+  foodId: number = null;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private location: Location) { }
 
   ngOnInit() {
   }
