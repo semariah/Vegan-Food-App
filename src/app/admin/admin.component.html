@@ -1,3 +1,39 @@
-<p>
-  admin works!
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3>Add New Food to Inventory</h3>
+  </div>
+</div>
+<div class="panel-body">
+  <div>
+    <div>
+      <label>Food Name:</label>
+      <br>
+      <input #newName>
+    </div>
+
+    <div>
+      <label>Food Ingredients:</label>
+      <br>
+      <input #newIngredients>
+    </div>
+
+    <div>
+      <label>Food Diet:</label>
+      <br>
+      <input #newDiet>
+    </div>
+
+    <div>
+      <label>Food Calories:</label>
+      <br>
+      <input #newCalories>
+    </div>
+
+    <div>
+      <label>Food Instructions:</label>
+      <br>
+      <textarea #newInstructions></textarea>
+    </div>
+    <button (click)="submitForm(newName.value, newIngredients.value, newDiet.value, newCalories.value, newInstructions.value); newName.value=''; newIngredients.value=''; newDiet.value=''; newCalories.value=''; newInstructions.value=''">Add</button>
+  </div>
+</div>
