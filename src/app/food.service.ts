@@ -20,8 +20,17 @@ export class FoodService {
   }
 
   getFoodById(foodId: string){
-    return this.database.object('foods/' + foodId);
+    return this.database.object('/foods/' + foodId);
   }
+
+  updateFood(localUpdatedFood){
+    var foodEntryInFirebase = this.getFoodById(localUpdatedFood.$key);
+    foodEntryInFirebase.update({name: localUpdatedFood.name,
+                                ingredient: localUpdatedFood.ingredient,
+                                diet: localUpdatedFood.diet, calories: localUpdatedFood.calories, method: localUpdatedFood.method});
+  }
+
+
 
 
 }
