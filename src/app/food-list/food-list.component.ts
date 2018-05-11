@@ -23,7 +23,7 @@ export class FoodListComponent implements OnInit {
   }
 
   goToDetailPage(clickedFood: Food) {
-     // this.router.navigate(['foods', clickedFood.id]);
+    this.router.navigate(['foods', clickedFood.$key]);
    };
 
 
