@@ -15,6 +15,10 @@ export class FoodService {
     return this.foods;
   }
 
+  addFood(newFood: Food) {
+    this.foods.push(newFood);
+  }
+
   getFoodById(foodId: number){
     // for (var i = 0; i <= FOODS.length - 1; i++) {
     //   if (FOODS[i].id === foodId) {
