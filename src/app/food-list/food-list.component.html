@@ -1,13 +1,13 @@
 <div class="container">
   <h2>Food List</h2>
-  <div *ngFor="let food of foods | async" (click)="goToDetailPage(food)"class="panel panel-default">
+  <div *ngFor="let food of foods | async" class="panel panel-default">
     <div class="panel-body">
-      <h3><strong>{{food.name}}</strong></h3>
+      <h3 (click)="goToDetailPage(food)"><strong>{{food.name}}</strong></h3>
       <h5>Ingredients: {{food.ingredient}}</h5>
       <h5>Diet: {{food.diet}}</h5>
       <h5>Calories: {{food.calories}}</h5>
       <div *ngIf="currentRoute === '/admin'">
-      <p>Instructions: {{food.method}}</p>
+      <h5>Instructions: {{food.method}}</h5>
       <hr>
       <app-edit-food [selectedFood]="food"></app-edit-food>
     </div>

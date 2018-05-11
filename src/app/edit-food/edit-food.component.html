@@ -1,20 +1,50 @@
 <h4>Edit Food</h4>
 
-<label>New Food Name:</label>
-<input [(ngModel)]="selectedFood.name">
+<div ng-app="myApp" ng-controller="myCtrl">
+  Name: <input ng-model="selectedFood.name">
+  <h1>{{name}}</h1>
+
+</div>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+  Ingredient: <input ng-model="selectedFood.ingredient">
+  <h1>{{ingredient}}</h1>
+
+</div>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+  Diet: <input ng-model="selectedFood.diet">
+  <h1>{{diet}}</h1>
+
+</div>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+  Calories: <input ng-model="selectedFood.calories">
+  <h1>{{calories}}</h1>
+
+</div>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+  Instructions: <input ng-model="selectedFood.method">
+  <h1>{{method}}</h1>
+
+</div>
+
+<!-- <label>New Food Name:</label>
+<input [(ngModel)]="selectedFood.name" type="text">
 <br>
 
 <label>New Food Ingredient:</label>
-<input [(ngModel)]="selectedFood.ingredient">
+<input [(ngModel)]="selectedFood.ingredient" type="text">
 <br>
 
 <label>New Food Diet:</label>
-<input [(ngModel)]="selectedFood.diet">
+<input [(ngModel)]="selectedFood.diet" type="text">
 <br>
 
 <label>New Food Calories:</label>
-<input [(ngModel)]="selectedFood.calories">
+<input [(ngModel)]="selectedFood.calories" type="text">
 <br>
 
 <label>New Food Instructions:</label>
-<input [(ngModel)]="selectedFood.method">
+<input [(ngModel)]="selectedFood.method" type="text"> -->
