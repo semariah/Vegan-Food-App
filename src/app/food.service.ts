@@ -9,10 +9,9 @@ export class FoodService {
 
   constructor(private database: AngularFireDatabase) {
     this.foods = database.list('foods');
-
   }
 
-  getFoods() {
+  getFoods(){
     return this.foods;
   }
 

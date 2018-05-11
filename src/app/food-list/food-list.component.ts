@@ -5,6 +5,7 @@ import { FoodService } from '../food.service';
 import { FirebaseListObservable } from 'angularfire2/database';
 
 
+
 @Component({
   selector: 'app-food-list',
   templateUrl: './food-list.component.html',
@@ -13,7 +14,6 @@ import { FirebaseListObservable } from 'angularfire2/database';
 })
 export class FoodListComponent implements OnInit {
   foods: FirebaseListObservable<any[]>;
-
 
   constructor(private router: Router, private foodService: FoodService) { }
 
