@@ -1,5 +1,5 @@
 <div class="container">
-  <h3>{{foodToDisplay.name}}</h3>
+  <h3>{{(foodToDisplay | async)?.name}}</h3>
   <h5>Ingredients: {{foodToDisplay.ingredient}}</h5>
   <h5>Diet: {{foodToDisplay.diet}}</h5>
   <h5>Calories: {{foodToDisplay.calories}}</h5>
