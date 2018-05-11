@@ -1,6 +1,6 @@
 <div class="container">
   <h2>Food List</h2>
-  <div *ngFor="let food of foods" (click)="goToDetailPage(food)" class="panel panel-default">
+  <div *ngFor="let food of foods | async" (click)="goToDetailPage(food)" class="panel panel-default">
     <div class="panel-body">
       <h3><strong>{{food.name}}</strong></h3>
       <h5>Ingredients: {{food.ingredient}}</h5>
