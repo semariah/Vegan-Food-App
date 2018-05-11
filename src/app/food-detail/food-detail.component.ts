@@ -20,7 +20,7 @@ export class FoodDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.foodId = parseInt(urlParameters['id']);
     });
-    this.foodToDisplay = this.foodService.getFoodById(this.foodId);
+    // this.foodToDisplay = this.foodService.getFoodById(this.foodId);
   }
 
 }
