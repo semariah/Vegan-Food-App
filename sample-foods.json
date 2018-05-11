@@ -1,0 +1,34 @@
+{ "foods": [{
+  "name": "Tofurkey",
+  "ingredient": "Tofu",
+  "diet": "Protein",
+  "calories": "450",
+  "method": "Stir fry onion & garlic first, then add the tofu which is cut in small pieces, cook for few min",
+  "id": "1"
+  }, {
+    "name": "Lentil-stew",
+    "ingredient": "Lentil",
+    "diet": "Protein",
+    "calories": "500",
+    "method": "Boil water & onion then add the lentil and boil it for few min, serve it as needed",
+    "id": "2"
+
+  }, {
+    "name": "Fried-spinach-mushroom",
+    "ingredient": "Spinach & mushroom",
+    "diet": "Carb",
+    "calories": "400",
+    "method": "Garlic fry the spinach & mushroom and serve it with either taco or pasta",
+    "id": "3"
+
+  }, {
+    "name": "Fruit-salad",
+    "ingredient": "Mango & guava",
+    "diet": "Vitamin-C",
+    "calories": "200",
+    "method": "Cut mango & guava or any other fruits & serve it",
+    "id": "4"
+
+
+  }]
+}
