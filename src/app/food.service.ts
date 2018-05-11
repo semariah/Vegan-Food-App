@@ -11,4 +11,13 @@ export class FoodService {
     return FOODS;
   }
 
+  getFoodById(foodId: number){
+    for (var i = 0; i <= FOODS.length - 1; i++) {
+      if (FOODS[i].id === foodId) {
+        return FOODS[i];
+      }
+    }
+  }
+
+
 }
