@@ -12,6 +12,7 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
+import { EditFoodComponent } from './edit-food/edit-food.component';
 
 
 export const firebaseConfig = {
@@ -29,7 +30,8 @@ export const firebaseConfig = {
     AboutComponent,
     FoodListComponent,
     FoodDetailComponent,
-    AdminComponent
+    AdminComponent,
+    EditFoodComponent
   ],
   imports: [
     BrowserModule,
