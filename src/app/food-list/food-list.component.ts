@@ -9,10 +9,15 @@ import { FoodService } from '../food.service';
   styleUrls: ['./food-list.component.css'],
   providers: [FoodService]
 })
-export class FoodListComponent {
+export class FoodListComponent implements OnInit {
   foods: Food[];
 
   constructor(private router: Router, private foodService: FoodService) { }
+
+
+  ngOnInit(){
+    this.foods = this.foodService.getFoods();
+  }
 
   goToDetailPage(clickedFood: Food) {
      this.router.navigate(['foods', clickedFood.id]);
