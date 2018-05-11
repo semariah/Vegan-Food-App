@@ -6,9 +6,8 @@
       <h5>Ingredients: {{food.ingredient}}</h5>
       <h5>Diet: {{food.diet}}</h5>
       <h5>Calories: {{food.calories}}</h5>
-      <h5>Method: {{food.method}}</h5>
       <div *ngIf="currentRoute === '/admin'">
-      {{food.method}}
+      <p>Instructions: {{food.method}}</p>
       <hr>
       <app-edit-food></app-edit-food>
     </div>
