@@ -1,3 +1,12 @@
-<p>
-  food-list works!
-</p>
+<div class="container">
+  <h2>Food List</h2>
+  <div *ngFor="let food of foods" class="panel panel-default">
+    <div class="panel-body">
+      <h3><strong>{{food.name}}</strong></h3>
+      <h5>Ingredients: {{food.ingredient}}</h5>
+      <h5>Diet: {{food.diet}}</h5>
+      <h5>Calories: {{food.calories}}</h5>
+      <h5>Method: {{food.method}}</h5>
+    </div>
+  </div>
+</div>
