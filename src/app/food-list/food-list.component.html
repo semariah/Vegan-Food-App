@@ -9,7 +9,7 @@
       <div *ngIf="currentRoute === '/admin'">
       <p>Instructions: {{food.method}}</p>
       <hr>
-      <app-edit-food></app-edit-food>
+      <app-edit-food [selectedFood]="food"></app-edit-food>
     </div>
     </div>
   </div>
