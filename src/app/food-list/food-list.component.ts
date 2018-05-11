@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Food } from '../food.model';
 import { Router } from '@angular/router';
 import { FoodService } from '../food.service';
+import { FirebaseListObservable } from 'angularfire2/database';
+
 
 @Component({
   selector: 'app-food-list',
@@ -10,7 +12,8 @@ import { FoodService } from '../food.service';
   providers: [FoodService]
 })
 export class FoodListComponent implements OnInit {
-  foods: Food[];
+  foods: FirebaseListObservable<any[]>;
+
 
   constructor(private router: Router, private foodService: FoodService) { }
 
