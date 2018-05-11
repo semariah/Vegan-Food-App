@@ -11,6 +11,7 @@ import { FoodDetailComponent } from './food-detail/food-detail.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AdminComponent } from './admin/admin.component';
 
 
 export const firebaseConfig = {
@@ -27,7 +28,8 @@ export const firebaseConfig = {
     WelcomeComponent,
     AboutComponent,
     FoodListComponent,
-    FoodDetailComponent
+    FoodDetailComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
