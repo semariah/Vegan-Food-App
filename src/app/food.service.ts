@@ -19,12 +19,8 @@ export class FoodService {
     this.foods.push(newFood);
   }
 
-  getFoodById(foodId: number){
-    // for (var i = 0; i <= FOODS.length - 1; i++) {
-    //   if (FOODS[i].id === foodId) {
-    //     return FOODS[i];
-    //   }
-    // }
+  getFoodById(foodId: string){
+    return this.database.object('foods/' + foodId);
   }
 
 
