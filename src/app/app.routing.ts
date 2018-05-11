@@ -4,6 +4,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent }   from './about/about.component';
 import { FoodListComponent } from './food-list/food-list.component';
 import { FoodDetailComponent }   from './food-detail/food-detail.component';
+import { AdminComponent }   from './admin/admin.component';
 
 
 
@@ -23,9 +24,11 @@ const appRoutes: Routes = [
   {
     path: 'foods/:id',
     component: FoodDetailComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
   }
-
-
 
 ];
 
