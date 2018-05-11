@@ -14,6 +14,9 @@ export class FoodDetailComponent implements OnInit {
   constructor(private route: ActivatedRoute, private location: Location) { }
 
   ngOnInit() {
+    this.route.params.forEach((urlParameters) => {
+      this.foodId = parseInt(urlParameters['id']);
+    });
   }
 
 }
