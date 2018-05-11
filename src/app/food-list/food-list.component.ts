@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Food } from '../food.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-food-list',
@@ -14,7 +15,12 @@ export class FoodListComponent {
   new Food("Fruit-salad", "Mango & guava", "Vitamin C", 200, "Cut mango & guava or any other fruits & serve it", 4)
 ];
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  goToDetailPage(clickedFood: Food) {
+     this.router.navigate(['foods', clickedFood.id]);
+   };
+
 
 
 
