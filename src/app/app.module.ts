@@ -7,6 +7,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { routing } from './app.routing';
 import { AboutComponent } from './about/about.component';
 import { FoodListComponent } from './food-list/food-list.component';
+import { FoodDetailComponent } from './food-detail/food-detail.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { FoodListComponent } from './food-list/food-list.component';
     AppComponent,
     WelcomeComponent,
     AboutComponent,
-    FoodListComponent
+    FoodListComponent,
+    FoodDetailComponent
   ],
   imports: [
     BrowserModule,
