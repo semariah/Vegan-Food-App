@@ -6,7 +6,8 @@ import { Food } from '../food.model';
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.css']
+  styleUrls: ['./admin.component.css'],
+  providers: [FoodService]
 })
 export class AdminComponent implements OnInit {
 
