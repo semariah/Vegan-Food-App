@@ -18,7 +18,8 @@ export class AdminComponent implements OnInit {
 
   submitForm(name: string, ingredient: string, diet: string, calories: number, method: string) {
     var newFood: Food = new Food(name, ingredient, diet, calories, method);
-    console.log(newFood);
+    this.foodService.addFood(newFood);
+
   }
 
 }
