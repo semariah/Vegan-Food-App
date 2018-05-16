@@ -1,7 +1,7 @@
 <h4>Edit Food</h4>
 
-<div ng-app="myApp" ng-controller="myCtrl">
-  Name: <input ng-model="selectedFood.name">
+<!-- <div ng-app="myApp" ng-controller="myCtrl">
+  Name: <input [(ngModel)]="selectedFood.name">
   <h1>{{name}}</h1>
 
 </div>
@@ -28,12 +28,11 @@
   Instructions: <input ng-model="selectedFood.method">
   <h1>{{method}}</h1>
 
-</div>
+</div> -->
 
-<button (click)="beginUpdatingFood(selectedFood)">Update</button>
-<button (click)="beginDeletingFood(selectedFood)">Delete</button>
 
-<!-- <label>New Food Name:</label>
+
+<label>New Food Name:</label>
 <input [(ngModel)]="selectedFood.name" type="text">
 <br>
 
@@ -50,4 +49,7 @@
 <br>
 
 <label>New Food Instructions:</label>
-<input [(ngModel)]="selectedFood.method" type="text"> -->
+<input [(ngModel)]="selectedFood.method" type="text">
+<button (click)="beginUpdatingFood(selectedFood)">Update</button>
+<hr>
+<button (click)="beginDeletingFood(selectedFood)">Delete</button>

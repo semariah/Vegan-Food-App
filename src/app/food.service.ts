@@ -32,7 +32,9 @@ export class FoodService {
                                 diet: localUpdatedFood.diet, calories: localUpdatedFood.calories, method: localUpdatedFood.method});
   }
 
-
-
+  deleteFood(localFoodToDelete){
+    var foodEntryInFirebase = this.getFoodById(localFoodToDelete.$key);
+    foodEntryInFirebase.remove();
+  }
 
 }

@@ -13,7 +13,7 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
 })
 export class FoodDetailComponent implements OnInit {
   foodId: string;
-  foodToDisplay;
+  foodToDisplay: Food;
 
   constructor(private route: ActivatedRoute, private location: Location, private foodService: FoodService) { }
 
@@ -21,7 +21,11 @@ export class FoodDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.foodId = urlParameters['id'];
     });
-     this.foodToDisplay = this.foodService.getFoodById(this.foodId);
+    this.foodService.getFoodById(this.foodId).subscribe(dataLastEmittedFromObserver => {
+    this.foodToDisplay = new Food(dataLastEmittedFromObserver.name,
+                                     dataLastEmittedFromObserver.ingredient,
+                                     dataLastEmittedFromObserver.diet, dataLastEmittedFromObserver.calories, dataLastEmittedFromObserver.method)
+  })
   }
 
 }
